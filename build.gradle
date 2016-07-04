@@ -1,11 +1,13 @@
 subprojects {
+	apply from: rootProject.projectDir.path + '/dependencies.gradle'
+
 	buildscript {
 		repositories {
 			jcenter()
 		}
 	    dependencies {
-    	    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
-		    classpath 'io.spring.gradle:dependency-management-plugin:0.5.7.RELEASE'
+	    	classpath build_plugins.gradle_bintray_plugin
+        	classpath build_plugins.dependency_management_plugin
 	    }
 	}
 }

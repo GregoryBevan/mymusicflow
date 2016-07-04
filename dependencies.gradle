@@ -1,0 +1,10 @@
+ext.build_plugins = [
+	gradle_bintray_plugin: 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6',
+	dependency_management_plugin: 'io.spring.gradle:dependency-management-plugin:0.5.7.RELEASE',
+	wildfly_swarm_plugin: 'org.wildfly.swarm:wildfly-swarm-plugin:1.0.0.Final'
+]
+
+ext.libraries = [
+	junit: 'junit:junit:4.12',
+	slf4j: 'org.slf4j:slf4j-api:1.7.21'
+]

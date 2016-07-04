@@ -1,3 +1,13 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	
+	dependencies {
+        classpath build_plugins.wildfly_swarm_plugin
+    }
+}
+
 plugins {
 	id 'java'
 	id 'maven'
@@ -10,6 +20,6 @@ repositories {
 }
 
 dependencies {
-    compile 'org.slf4j:slf4j-api:1.7.21'
-    testCompile 'junit:junit:4.12'
+    compile libraries.slf4j
+    testCompile libraries.junit
 }
