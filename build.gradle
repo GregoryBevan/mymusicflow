@@ -1,0 +1,11 @@
+subprojects {
+	buildscript {
+		repositories {
+			jcenter()
+		}
+	    dependencies {
+    	    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+		    classpath 'io.spring.gradle:dependency-management-plugin:0.5.7.RELEASE'
+	    }
+	}
+}
